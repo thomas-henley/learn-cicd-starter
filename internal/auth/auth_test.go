@@ -19,7 +19,7 @@ func TestGetAPIKey(t *testing.T) {
 			name:    "empty header",
 			headers: http.Header{},
 			want:    "",
-			wantErr: false,
+			wantErr: true,
 		},
 	}
 	for _, tt := range tests {
